@@ -15,7 +15,7 @@ const searchImages = async (searchQuery) => {
     options
   );
 
-  console.log(response);
+  console.log(response ? response.data.results : "error");
   return response.data.results;
 };
 
